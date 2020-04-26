@@ -190,18 +190,18 @@
                 Lis[i].i = i;
                 Lis[i].onmouseover = function () {
                     this.className = "lihover";
-                    // var h0 = (this.i - 1) * 30 + 42;
-                    // var y = this.getElementsByTagName("div")[0].offsetHeight;
-                    // console.log(y);
-                    // var h = this.getElementsByTagName("div")[0].style.top + y;
-                    // console.log(h)
-                    // if (h < h0) {
-                    //     this.getElementsByTagName("div")[0].style.top = h0 + "px";
-                    // }
+                    var h0 = (this.i - 1) * 30 + 42;
+                    var y = this.getElementsByTagName("div")[0].offsetHeight;
+                    console.log(y);
+                    var h = this.getElementsByTagName("div")[0].style.top + y;
+                    console.log(h)
+                    if (h < h0) {
+                        this.getElementsByTagName("div")[0].style.top = h0 + "px";
+                    }
 
-                    // if (y > 550) {
-                    //     this.getElementsByTagName("div")[0].style.top = "3px";
-                    // }
+                    if (y > 550) {
+                        this.getElementsByTagName("div")[0].style.top = "3px";
+                    }
                 }
 
                 Lis[i].onmouseout = function () {
